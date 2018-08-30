@@ -6,10 +6,18 @@
     <title>Raven2049'blog</title>
 
     <style>
+        body {
+            margin: 0;
+        }
+
         h1 {
             font-size: 24px;
             color: black;
             text-align: center;
+        }
+
+        h2 {
+            margin: 0;
         }
 
         span {
@@ -20,15 +28,52 @@
             color: darkgreen;
         }
 
-        div {
-            width: 200px;
-            height: 200px;
-            float: left;
+        #container {
+            width: 100%;
+            height: 1000px;
+            background-color: aquamarine;
+        }
+
+        #head {
+            width: 100%;
+            height: 20%;
+            background-color: darkcyan;
+        }
+
+        #content {
+            width: 60%;
+            height: 60%;
+            float: right
+        }
+
+        #menu {
+            width: 40%;
+            height: 60%;
+            float: left
+        }
+
+        #end {
+            width: 100%;
+            height: 20%;
+            clear: both;
+            background-color: orangered;
+        }
+
+        #unordered {
+            width: 100%;
+            height: 50%;
+            background-color: aliceblue;
+        }
+
+        #ordered {
+            width: 100%;
+            height: 50%;
+            background-color: cornsilk;
         }
 
         table tr td,
         th {
-            border: 1px solid #000;
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -37,24 +82,43 @@
     <h1>Welcome to the Raven2049's personal blog!</h1>
     <h1><span>Shall We Dance?</span></h1>
     <h1><q>As we all known,night is dark,deep deep dark.</q></h1>
-    <div>
-        <h2>无序列表信息标题</h2>
-        <ul>
-            <li>无序列表信息01</li>
-            <li>无序列表信息02</li>
-            <li>无序列表信息03</li>
-        </ul>
-    </div>
+    <div id="container">
+        <div id="head">
+            <h2>头部</h2>
+        </div>
 
-    <div>
-        <h2>有序列表信息标题</h2>
-        <ol>
-            <li>有序列表信息01</li>
-            <li>有序列表信息02</li>
-            <li>有序列表信息03</li>
-        </ol>
-    </div>
+        <div id="content">
+            <div id="unordered">
+                <h2>无序列表信息标题</h2>
+                <ul>
+                    <li>无序列表信息01</li>
+                    <li>无序列表信息02</li>
+                    <li>无序列表信息03</li>
+                </ul>
+            </div>
 
+            <div id="ordered">
+                <h2>有序列表信息标题</h2>
+                <ol>
+                    <li>有序列表信息01</li>
+                    <li>有序列表信息02</li>
+                    <li>有序列表信息03</li>
+                </ol>
+            </div>
+        </div>
+        <div id="menu">
+            <h2>目录标题</h2>
+            <ol>
+                <li>第一条目录</li>
+                <li>第二条目录</li>
+                <li>第三条目录</li>
+            </ol>
+        </div>
+
+        <div id="end">
+            <h2>尾部</h2>
+        </div>
+    </div>
     <table>
         <tbody>
             <tr>
